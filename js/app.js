@@ -16,6 +16,7 @@
 
   /* Mobile gets shorter scroll height (match CSS 650vh) */
   const SCROLL_HEIGHT = window.innerWidth < 768 ? 390 : 660;
+  const isMobile = window.innerWidth < 768;
 
   /* ── DOM ── */
   const loader      = document.getElementById("loader");
@@ -137,6 +138,7 @@
   function revealPage() {
     loader.classList.add("hidden");
     header.classList.add("visible");
+    if (isMobile) return;
 
     /* Staggered entrance for hero words */
     const words = heroEl.querySelectorAll(".word");
@@ -245,6 +247,7 @@
   }
 
   function buildSectionTimeline(section) {
+    if (isMobile) return gsap.timeline({ paused: true });
     const type = section.dataset.animation;
     const children = [...section.querySelectorAll(
       ".section-label, .section-heading, .section-body, .section-note, .section-quote, " +
@@ -296,6 +299,10 @@
   }
 
   function initSectionAnimations() {
+    if (isMobile) {
+      sections.forEach(s => { s.style.opacity = "1"; s.classList.add("visible"); });
+      return;
+    }
     sections.forEach((section) => {
       const enter   = parseFloat(section.dataset.enter) / 100;
       const leave   = parseFloat(section.dataset.leave) / 100;

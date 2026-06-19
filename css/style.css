@@ -655,11 +655,17 @@ body {
   .align-left  .section-inner,
   .align-right .section-inner {
     max-width: 100%;
+    padding: 1.25rem 1.25rem;
   }
 
   .section-heading { font-size: clamp(1.4rem, 5.5vw, 2.2rem); }
 
-  .stats-grid { gap: 2.75rem; flex-wrap: wrap; }
+  .section-body { font-size: 0.97rem; line-height: 1.72; }
+
+  .genre-desc  { font-size: 0.88rem; }
+  .pillar-desc { font-size: 0.88rem; }
+
+  .stats-grid { gap: 2rem; flex-wrap: wrap; padding: 1.75rem 1.25rem; }
 
   .site-nav .nav-link:not(.nav-cta) { display: none; }
 
