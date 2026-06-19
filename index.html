@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJ LitKick — Hip Hop · Trap · R&B · Munich</title>
+  <meta name="description" content="DJ LitKick — Munich's premier Hip Hop, Trap & R'n'B entertainer. Winner of the German DJ Contest 2020. Book now for clubs, private events & festivals." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;1,14..32,300;1,14..32,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- 1 · LOADER -->
+  <div id="loader">
+    <div class="loader-brand">DJ <span class="accent">LitKick</span></div>
+    <div class="loader-bar-wrap">
+      <div id="loader-bar"></div>
+    </div>
+    <div id="loader-percent">0%</div>
+  </div>
+
+  <!-- 2 · FIXED HEADER -->
+  <header class="site-header" id="site-header">
+    <a class="site-logo" href="#">DJ <span class="accent">LitKick</span></a>
+    <nav class="site-nav">
+      <a class="nav-link" data-target="25">About</a>
+      <a class="nav-link" data-target="42">Sound</a>
+      <a class="nav-link nav-cta" data-target="95">Book Now</a>
+    </nav>
+  </header>
+
+  <!-- 3 · HERO STANDALONE (fixed, fades out on scroll) -->
+  <section id="hero-standalone" class="hero-standalone">
+    <div class="hero-inner">
+      <span class="hero-label">Munich &nbsp;·&nbsp; Europe</span>
+      <h1 class="hero-heading">
+        <span class="word">DJ</span>&nbsp;<span class="word accent">LitKick</span>
+      </h1>
+      <p class="hero-genres">Hip Hop &nbsp;·&nbsp; Trap &nbsp;·&nbsp; R&B</p>
+      <div class="scroll-indicator">
+        <span class="scroll-line"></span>
+        <span class="scroll-text">Scroll</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · CANVAS (fixed, reveals via circle-wipe) -->
+  <div class="canvas-wrap" id="canvas-wrap">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- 5 · DARK OVERLAY (fades in for stats section) -->
+  <div id="dark-overlay"></div>
+
+  <!-- 6 · MARQUEE (fixed, scroll-driven horizontal) -->
+  <div class="marquee-wrap" id="marquee" data-scroll-speed="-28">
+    <p class="marquee-text">HIP HOP &nbsp;·&nbsp; TRAP &nbsp;·&nbsp; R&B &nbsp;·&nbsp; MUSIC FOR THE LOVERS &nbsp;·&nbsp; DJ LITKICK &nbsp;·&nbsp; GERMAN DJ CONTEST 2020 &nbsp;·&nbsp; MUNICH &nbsp;·&nbsp; EUROPE &nbsp;·&nbsp;</p>
+  </div>
+
+  <!-- 7 · SCROLL CONTAINER (1100vh) -->
+  <div id="scroll-container">
+
+    <!-- SECTION 1 · The Artist -->
+    <section class="scroll-section section-content align-left"
+             data-enter="7" data-leave="18" data-animation="slide-left">
+      <div class="section-inner">
+        <span class="section-label">The Artist</span>
+        <h2 class="section-heading">Munich's Most<br>Electrifying Set</h2>
+        <p class="section-body">DJ LitKick emerged from Bavaria's nightlife scene to conquer dance floors across Europe. Winner of the <strong>German DJ Contest 2020</strong> — the highest recognition of skill in Germany's DJ landscape. Performing in Munich, Kaiserslautern, Switzerland, Croatia, and beyond.</p>
+        <p class="section-body">His sets are built on three pillars: razor-sharp scratching, seamless transitions, and magnetic microphone energy. Every night is a choreographed experience — from the first beat drop to the last note.</p>
+        <blockquote class="section-quote">"Not just a DJ&hellip; an Entertainer."</blockquote>
+      </div>
+    </section>
+
+    <!-- SECTION 2 · The Sound -->
+    <section class="scroll-section section-content align-right"
+             data-enter="27" data-leave="39" data-animation="slide-right">
+      <div class="section-inner">
+        <span class="section-label">The Sound</span>
+        <h2 class="section-heading">Music for<br>the Lovers</h2>
+        <ul class="sound-genre-list">
+          <li class="genre-item">
+            <span class="genre-mark"></span>
+            <div>
+              <span class="genre-name">Hip Hop</span>
+              <span class="genre-desc">Old-school soul and new-school fire. Timeless classics woven with the freshest releases.</span>
+            </div>
+          </li>
+          <li class="genre-item genre-featured">
+            <span class="genre-mark"></span>
+            <div>
+              <span class="genre-name">Trap</span>
+              <span class="genre-desc">Hard-hitting 808s and crisp hi-hats. The pulse that ignites the floor and makes the room one.</span>
+            </div>
+          </li>
+          <li class="genre-item">
+            <span class="genre-mark"></span>
+            <div>
+              <span class="genre-name">R&amp;B</span>
+              <span class="genre-desc">Smooth, soulful, deeply sensual. The soundtrack for those who feel the music in their chest.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 3 · The Craft -->
+    <section class="scroll-section section-content align-left"
+             data-enter="42" data-leave="54" data-animation="rotate-in">
+      <div class="section-inner">
+        <span class="section-label">The Craft</span>
+        <h2 class="section-heading">Beyond the<br>Decks</h2>
+        <ul class="pillar-list">
+          <li class="pillar-item">
+            <span class="pillar-num">01</span>
+            <div>
+              <span class="pillar-title">Scratching</span>
+              <span class="pillar-desc">Precision technique meets raw artistry. Every scratch is deliberate — a signature mark that separates a DJ from an entertainer.</span>
+            </div>
+          </li>
+          <li class="pillar-item">
+            <span class="pillar-num">02</span>
+            <div>
+              <span class="pillar-title">Transitions</span>
+              <span class="pillar-desc">Seamless, story-driven mixing that keeps the energy alive from the first track to the last. No dead moments — pure flow.</span>
+            </div>
+          </li>
+          <li class="pillar-item">
+            <span class="pillar-num">03</span>
+            <div>
+              <span class="pillar-title">Mic Energy</span>
+              <span class="pillar-desc">The microphone bridges DJ and crowd. Magnetic energy that connects the room and turns a party into a shared memory.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 4 · Connect -->
+    <section class="scroll-section section-content align-right"
+             data-enter="57" data-leave="69" data-animation="scale-up">
+      <div class="section-inner">
+        <span class="section-label">Follow</span>
+        <h2 class="section-heading">Follow the<br>Journey</h2>
+        <ul class="platform-list">
+          <li>
+            <a href="https://www.instagram.com/dj_litkick" target="_blank" rel="noopener noreferrer" class="platform-link">
+              <span class="platform-name">Instagram</span>
+              <span class="platform-handle">@dj_litkick</span>
+              <span class="platform-arrow">&rarr;</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.mixcloud.com/DJ_LitKick/" target="_blank" rel="noopener noreferrer" class="platform-link">
+              <span class="platform-name">Mixcloud</span>
+              <span class="platform-handle">DJ_LitKick</span>
+              <span class="platform-arrow">&rarr;</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@djlitkick4291" target="_blank" rel="noopener noreferrer" class="platform-link">
+              <span class="platform-name">YouTube</span>
+              <span class="platform-handle">@djlitkick</span>
+              <span class="platform-arrow">&rarr;</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitch.tv/dj_litkick" target="_blank" rel="noopener noreferrer" class="platform-link">
+              <span class="platform-name">Twitch</span>
+              <span class="platform-handle">dj_litkick</span>
+              <span class="platform-arrow">&rarr;</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 5 · Stats (dark overlay) -->
+    <section class="scroll-section section-stats"
+             data-enter="73" data-leave="83" data-animation="stagger-up" data-centered="true">
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-top">
+            <span class="stat-number" data-value="3400" data-decimals="0">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <span class="stat-label">Instagram Followers</span>
+        </div>
+        <div class="stat">
+          <div class="stat-top">
+            <span class="stat-number" data-value="3" data-decimals="0">0</span>
+          </div>
+          <span class="stat-label">Genres in Every Set</span>
+        </div>
+        <div class="stat">
+          <div class="stat-top">
+            <span class="stat-number" data-value="6" data-decimals="0">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <span class="stat-label">Years Performing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 · Book Now (persists) -->
+    <section class="scroll-section section-cta"
+             data-enter="91" data-leave="100" data-animation="clip-reveal"
+             data-persist="true" data-centered="true">
+      <div class="cta-inner">
+        <span class="section-label">Book</span>
+        <h2 class="section-heading cta-heading">Book Your<br><em>Night</em></h2>
+        <p class="section-body">Reach out on Instagram and let's make your night unforgettable.</p>
+        <a href="https://www.instagram.com/dj_litkick" target="_blank" rel="noopener noreferrer" class="cta-button">
+          Book Now &nbsp;&rarr;
+        </a>
+        <a href="https://www.instagram.com/dj_litkick" target="_blank" rel="noopener noreferrer" class="cta-ig">
+          @dj_litkick
+        </a>
+      </div>
+    </section>
+
+  </div><!-- /scroll-container -->
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <span class="footer-logo">DJ <span class="accent">LitKick</span></span>
+    <a href="https://www.instagram.com/dj_litkick" target="_blank" rel="noopener noreferrer" class="footer-ig">Instagram &nbsp;@dj_litkick</a>
+    <p class="footer-copy">&copy; 2026 DJ LitKick. All rights reserved. Munich, Germany.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
