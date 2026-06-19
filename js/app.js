@@ -15,7 +15,7 @@
   const FIRST_BATCH   = 12;
 
   /* Mobile gets shorter scroll height (match CSS 650vh) */
-  const SCROLL_HEIGHT = window.innerWidth < 768 ? 390 : 660;
+  const SCROLL_HEIGHT = window.innerWidth < 768 ? 650 : 660;
   const isMobile = window.innerWidth < 768;
 
   /* ── DOM ── */
@@ -227,6 +227,19 @@
      7 · SECTION POSITION + ANIMATION
   ────────────────────────────────────── */
   function positionSections() {
+    if (isMobile) {
+      const mobileTops = [90, 210, 325, 435, 530, 615];
+      sections.forEach((section, i) => {
+        const centered = section.dataset.centered === "true";
+        section.style.top = mobileTops[i] + "vh";
+        section.style.transform = centered
+          ? "translateX(-50%) translateY(-50%)"
+          : "translateY(-50%)";
+        section.style.willChange = "opacity";
+      });
+      return;
+    }
+
     sections.forEach((section) => {
       if (section.dataset.fixed === "true") return;
 

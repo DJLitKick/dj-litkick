@@ -673,8 +673,8 @@ body {
 
   .marquee-text { font-size: 20vw; }
 
-  /* Shorter scroll on mobile — JS must match SCROLL_HEIGHT */
-  #scroll-container { height: 390vh; }
+  /* Taller scroll on mobile — gives sections room to breathe without overlap */
+  #scroll-container { height: 650vh; }
 
   .site-footer { flex-direction: column; align-items: center; text-align: center; }
 }
