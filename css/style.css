@@ -303,10 +303,18 @@ body {
 /* Side alignment zones (product/canvas occupies center) */
 .align-left  { padding: 0 55vw 0 5vw; }
 .align-right { padding: 0 5vw 0 55vw; }
+.align-center { padding: 0 5vw; }
 
 .align-left  .section-inner,
 .align-right .section-inner {
   max-width: 40vw;
+  background: rgba(0, 0, 0, 0.60);
+  padding: 2rem 1.75rem;
+}
+
+.align-center .section-inner {
+  max-width: 620px;
+  margin: 0 auto;
   background: rgba(0, 0, 0, 0.60);
   padding: 2rem 1.75rem;
 }
@@ -650,10 +658,12 @@ body {
 @media (max-width: 768px) {
   /* Collapse side zones — text with dark backdrop */
   .align-left,
-  .align-right { padding: 0 1.5rem; }
+  .align-right,
+  .align-center { padding: 0 1.5rem; }
 
   .align-left  .section-inner,
-  .align-right .section-inner {
+  .align-right .section-inner,
+  .align-center .section-inner {
     max-width: 100%;
     padding: 1.25rem 1.25rem;
   }
